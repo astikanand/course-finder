@@ -1,0 +1,19 @@
+<h1>Searching for courses on - <%= @search_term %></h1>
+
+<div class="table-responsive">
+	<table class="table table-bordered ">
+		<tr>
+			<th>Image</th>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+
+		<% @courses.each do |course| %>
+		  <tr class=<%= cycle('active', 'success', 'info', 'warning')%>>
+		  	<td><%= image_tag(course["photoUrl"]) %></td>
+		  	<td><%= course["name"] %></td>
+		  	<td><%= course["description"] %></td>
+		  </tr>
+		<% end %>
+	</table>
+</div>
