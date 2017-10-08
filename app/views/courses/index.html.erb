@@ -1,5 +1,5 @@
 <h1>Searching for courses on - <%= @search_term %></h1>
-<% if @courses.nil? %>
+<% if @courses.nil? || @courses.blank? %>
   <h3>Sorry!! No Courses found with relevant information.</h3>
 <% else %>
 	<div class="table-responsive">
