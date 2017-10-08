@@ -27,8 +27,10 @@ Usage
 
 Requirements
 ------------------------------
+```
 ruby-2.3.3
 rails-5.1.4
+```
 
 
 
@@ -48,7 +50,7 @@ Installation
     $ bundle install
     ```
 
-3. Open your browser and hit [localhost:8000](http://localhost:8000/) 
+3. Open your browser and hit [localhost:3000](http://localhost:3000/) 
 
 
 
