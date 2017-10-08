@@ -9,20 +9,16 @@ Live
 
 Features
 ------------------------------
-* User can search all the courses by providing just course keyword.
+* User can search all the courses by providing just course keyword in search bar.
 * Makes use of **REst api provided by coursera** from [https://api.coursera.org/api/courses.v1](https://api.coursera.org/api/courses.v1)
 * Uses fields name, photoUrl and description provided by API.
 
 Usage
 ------------------------------
-* Just provide keyword course and it's value in url.
-  - Example:   
-      To search for all courses related to Java. 
-      https://course-finder-astikanand.herokuapp.com/?course=java
-      
-      and to search for all courses related to Ruby. 
-      https://course-finder-astikanand.herokuapp.com/?course=ruby
-
+* Just enter your course keyword in search bar and hit enter.
+* You will get a list of courses for that particular search keyword.
+* Click on that link and enjoy learning that course.
+ 
 
 
 Requirements
@@ -96,4 +92,4 @@ Preview
 
 **Home**
 
-![CourseFinder Home Page](https://i.imgur.com/antKnGj.png)
+![CourseFinder Home Page](https://i.imgur.com/skKDO7Y.png)
