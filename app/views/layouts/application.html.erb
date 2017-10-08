@@ -31,10 +31,23 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav select-active">
-          <li class="active"><a href="/">Home</a></li>
-          <li class=""><a href="">All Courses</a></li>
-          <li class=""><a href="">My Courses</a></li>
+          <li class="<% if @search_term.downcase != 'java' && @search_term.downcase != 'ruby' %>active<% end %>"><a href="/">Home</a></li>
+          <li class="<% if @search_term.downcase == 'java' %>active<% end %>"><a href="?search=java">Java</a></li>
+          <li class="<% if @search_term.downcase == 'ruby' %>active<% end %>"><a href="?search=ruby">Ruby</a></li>
         </ul>
+
+        <div class="col-sm-6 col-md-6">
+          <form action="<%= root_path %>" method="get" class="navbar-form">
+          <div class="input-group">
+              <%= text_field_tag :search, params[:search], placeholder: "Search courses java, python, ruby etc ...", class: "form-control" %>
+              <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+          </div>
+          </form>
+        </div>
+
+       
         <ul class="nav navbar-nav navbar-right">
           <li><a href="">Login</a></li>
           <li><a href="">Signup</a></li>

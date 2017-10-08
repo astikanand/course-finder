@@ -1,4 +1,4 @@
-<h1>Searching for courses on - <%= @search_term %></h1>
+<h1>Courses on - <%= @search_term %></h1>
 <% if @courses.nil? || @courses.blank? %>
   <h3>Sorry!! No Courses found with relevant information.</h3>
 <% else %>
@@ -10,12 +10,13 @@
 				<th>Description</th>
 			</tr>
 
-			<% @courses.each do |course| %>
-			  <tr class=<%= cycle('active', 'success', 'info', 'warning')%>>
-			  	<td><%= image_tag(course["photoUrl"]) %></td>
-			  	<td><%= course["name"] %></td>
-			  	<td><%= course["description"] %></td>
-			  </tr>
+			<% @courses.each do |course| %>		  
+				  <tr class=<%= cycle('active', 'success', 'info', 'warning')%>>
+				  	<td><%= image_tag(course["photoUrl"]) %></td>
+				  	<td><b><a href="https://www.coursera.org/learn/<%=course['slug']%>"><%= course["name"] %></a></b></td>
+				  	<td><%= course["description"] %></td>
+				  </tr>
+			  </a>
 			<% end %>
 		</table>
 	</div>

@@ -3,34 +3,41 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    padding-top: 70px;
-    background: #f3f3f3;
+  padding-top: 70px; 
+  background: #f3f3f3;
 }
 
 
 .page-wrapper {
-    min-height: 680px;
-    background: #fff;
-    margin-top: -18px;
+  min-height: 680px;
+  background: #fff;
+  margin-top: -18px;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-    color: #fff;
-    background-color: seagreen;
+  color: #fff;
+  background-color: seagreen;
 }
 .navbar-fixed-top {
-    border-width: 0;
+  border-width: 0;
 }
 
 p{
-    font-size: 16px;
-    color: gray;
+  font-size: 16px;
+  color: gray;
 }
 
 td img{
-    height:150px;
-    width:150px;
+  height:150px;
+  width:150px;
 }
+
+@media (min-width: 768px){
+  .navbar-form .input-group>.form-control {
+    width: 500px;
+  }
+}
+
 .footer {
     padding: 30px;
     bottom: 0;
